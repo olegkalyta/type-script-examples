@@ -1,4 +1,3 @@
-
 const user = {
     firstName: "Angela",
     lastName: "Davis",

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execute": "npx babel --presets @babel/preset-typescript index.ts --out-file output/index.js && node output/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,9 @@
     "typescript": "^4.2.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-typescript": "^7.13.0",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.25.0",
